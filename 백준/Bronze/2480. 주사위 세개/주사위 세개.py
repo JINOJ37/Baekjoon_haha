@@ -1,10 +1,11 @@
-A = list(map(int, input().split()))
-if A[0]==A[1]==A[2]:
-    print("%d" % int(10000+(A[0]*1000)))
-elif A[0]==A[1] or A[2]==A[0]:
-    print("%d" % int(1000+(A[0]*100)))
-elif A[1]==A[2]:
-    print("%d" % int(1000+(A[1]*100)))
+import sys
+
+A, B, C = map(int, sys.stdin.readline().split())
+if A==B==C:
+    print(10000+(A*1000))
+elif A==B or A==C:
+    print(1000+(A*100))
+elif B==C:
+    print(1000+(B*100))
 else:
-    money = max(A)*100
-    print(money)
+    print(max(A, B, C)*100)
