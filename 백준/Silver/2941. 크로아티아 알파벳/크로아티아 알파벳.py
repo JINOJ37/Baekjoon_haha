@@ -21,3 +21,12 @@ for i in s:
 
 number += len(check)
 print(number)
+
+"""
+c = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="]
+
+s = input()
+for i in c:
+    s = s.replace(i, 'a')
+print(len(s))
+"""
