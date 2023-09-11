@@ -11,3 +11,8 @@ for i in range(len(n)):
         continue
 
 print(result)
+
+***
+a,b=map(str,input().split())
+print(int(a,int(b)))
+***
